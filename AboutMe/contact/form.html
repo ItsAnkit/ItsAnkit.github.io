@@ -1,0 +1,104 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style type="text/css">
+      body {
+        padding: 1cm 4cm 3cm 4cm;
+        background-color: #ECD3CE;
+      }
+      img{
+      	height:25;
+      	width:50;
+      }
+      input[type=submit] {
+        width: 15em;  
+        height: 15em;
+      }
+  </style>
+<script type="text/javascript">
+  var count;
+  var dict = [];
+  var key = new Array( "Name", "Phone", "Email", "Comments" );
+  var val=new Array();
+  for(count=0;count<4;count++)
+  { val[count]=document.getElementById(key[count]).value;
+    dict.push({
+    key:   key[count],
+    value: val[count];
+    });
+  }
+</script>
+</head>
+
+<body background ="cont.jpg">
+  <h1 align="center">Contact Me</h1><br>
+
+  <form id="Contact_form" action= "data.py" method="POST" >
+  <table style="width:550px;border:0;" cellpadding="8" cellspacing="0">
+  <div class="form-group">
+  <tr> 
+  <td>
+    <label for="Name">Name :</label>
+  </td> 
+  <td>
+    <input name="Name" id="Name" type="text" maxlength="60" style="width:250px;" />
+  </td> 
+  </tr> 
+  </div>
+
+  <div class="form-group">
+  <tr> 
+  <td>
+    <label for="PhoneNumber">Phone number :</label>
+  </td> 
+  <td>
+    <input name="PhoneNumber" id="Phone" type="text" maxlength="43" style="width:250px;" />
+  </td> 
+  </tr> 
+  </div>
+
+  <div class="form-group">
+  <tr> 
+  <td>
+    <label for="FromEmailAddress">Email address :</label>
+  </td> 
+  <td>
+    <input name="FromEmailAddress" id="Email" type="text" maxlength="90" style="width:250px;" />
+  </td> 
+  </tr> 
+  </div>
+
+  <div class="form-group">
+  <tr> 
+  <td>
+    <label for="Comments">Comments :</label>
+  </td> 
+  <td>
+    <textarea name="Comments" id="Comments" rows="7" cols="40" style="width:350px;"></textarea>
+  </td> 
+  </tr> 
+  </div>
+  </table>
+  </form>
+
+  <center>
+    <input name="Submit" type="submit" value="Submit"  onclick="window.location.reload()" />
+  </center>
+  <br>
+  <br>
+  <center>
+    <img src="fb.jpg">
+    <img src="tw.jpg">
+    <img src="you.jpg">
+  </center>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
