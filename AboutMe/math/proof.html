@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Mathematical Proof
+  </title>
+
+  <style type="text/css">
+    .data{
+      padding: 2cm 3cm 2cm 3cm; 
+    }      
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                      <li class="active"><a href="../index.html">Home</a></li>
+                      <li><a href="../about/aboutme.html" >About Me</a></li>
+                      <li><a href="../contact/form.html" >Contact Me</a></li>
+                      <li><a href="../error/p1.html" >404 Error</a></li>
+                      <li><a href="../2048/index.html" >2048</a></li>
+                      <li><a href="../2584/index.html">2584</a></li>
+                      <li><a href="../math/proof.html">Mathematical Proof</a></li>
+
+              </div>
+        </nav>
+  <div class="data">
+    <center><h1> Mathematical Proof</h1></center>
+    <h2>If  2^x + 2^y = 2^z, then x=y given that x,y and z are positive integers.</h2>
+    <br>
+    <h3>Given :</h3>
+    <br>
+    Only those tiles get merged that add up to form a number that is nth power of 2 
+    <br>  Tiles begin from number 2 and x, y and z are greater than 1.
+    <br>
+
+    <h3>
+    Proof :
+    </h3>
+    <br>
+    Consider two tiles be 2^x & 2^y where x,y>=1.
+    As sum 2^x and 2^y is divisible by 2, so consider z such that
+    <br>
+    <center>
+    2^x + 2^y = 2^z
+    </center>
+    <br>
+    and n such that, 
+    <br>n=z-x
+    <br>
+    <center>
+        2^x(1+2^(y-x))=2^z
+        <br>
+        (1 + 2^(y-x))=2^(z-x)
+        <br>
+        (1+ 2^(y-x))=2^n
+    </center>
+    R.H.S is a power of 2 with n>=1 as power z is sum of powers of x and y so, z-x >= 1.<br>       
+    Therefore, for L.H.S as a power of 2, 2^(y-x) must be odd as 1 is added to it to make it even which can be only possible if y-x=0 as 2^0=1.
+    <br>
+    Hence, y-x=0 
+    <br> x=y.
+    <br>
+    Hence, proved.  
+  </div>
+</body>
+</html>
